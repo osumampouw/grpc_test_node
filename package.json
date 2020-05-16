@@ -1,0 +1,14 @@
+{
+  "name": "grpc_test_node",
+  "version": "1.0.0",
+  "description": "testing for grpc using node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oby Sumampouw",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
