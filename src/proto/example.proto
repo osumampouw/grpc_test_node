@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.example;
+
+message protobufRequest {
+    string id = 1;
+    string code = 2;
+}
+
+message protobufResponse {
+    string status = 1;
+    string result = 2;
+    string errorMessage = 3;
+}
+
+service protoService {
+    rpc getResponse (protobufRequest) returns (protobufResponse);
+}
