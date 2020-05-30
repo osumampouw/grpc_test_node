@@ -12,7 +12,7 @@ const packageDefinition = protoLoader.loadSync(PROTO_PATH,
         oneofs: true
     });
 const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
-const exampleProtoService = protoDescriptor.ExampleProtoService;
+const exampleProtoService = protoDescriptor.benchmark.grpc.test.grpc_test_java.ExampleProtoService;
 
 function getResponse(call, callback) {
     callback(null, createResponse(call.request))

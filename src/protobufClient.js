@@ -22,7 +22,7 @@ const exampleProtobufRequest = {
 
 const retries = 10;
 
-const client = new protoDescriptor.ExampleProtoService('localhost:80',
+const client = new protoDescriptor.benchmark.grpc.test.grpc_test_java.ExampleProtoService('localhost:80',
     grpc.credentials.createInsecure());
 
 // method 2 if we want to benchmark using promise

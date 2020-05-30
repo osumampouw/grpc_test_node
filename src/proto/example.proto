@@ -1,4 +1,6 @@
 syntax = "proto3";
+option java_multiple_files = true;
+package benchmark.grpc.test.grpc_test_java;
 
 message ExampleProtobufRequest {
     string id = 1;
